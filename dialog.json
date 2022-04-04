@@ -1,0 +1,53 @@
+{
+	"dialog": {
+		"jimmy": {
+			"ass": "piss",
+			"shit": "ass",
+			"test" : {
+				"yes" : ["piss and", "shit", "in my ass"],
+				"no" : ["piss and", "shit", "in YOUR ass", "test pee pee"],
+				"leakyanus" : ["i do two things kid", "i shit", "and i eat meat"]
+			},
+			"intro" : {
+				"greeting" : {"content" :"Sup,Buckeroo|You lookin,to buy,somethin{effect1}",
+					"effects":["","spawnText"]},
+				"yes": {"content" :"Great, Dvds on sale, Deals on meat{effect0}, great day to be,alive man|Got a,special today|every,5dvds,gets you|1,Meat,Fugghetaboutit,Ticket|Redeem that,for uh|sole ownership of|one log,of uh|meat of, your choosin|good fuckin,luck bro|",
+						"effect" : ["big_head_mode"] },
+				"no": {"content": "Well i dont,know what you're,lookin for man,but this is,a store|shit,butt,balls{effect1}",
+						"effects" : ["","big_head_mode"]}
+			},
+			"next" : {
+				"greeting" : {"content" : "Dont Just{effect0},stand there,go get some shit",
+					"effects": ["spawnText"]}, 
+				"piss" : {"content":"Dont piss on,the fuckin,denim man"},
+				"fart" : {"content": "Nice one, you, stinky fuck{effect0}|later,ya fuckin,gavone{effect1}","effects":["big_head_mode","leave_orbit"]}
+			},
+			"denimFloor" : {
+				"greeting" : {"content":"and,they said,wall to wall,denim flooring,was crazy,for a deli"}
+			},
+			"jamietaco" : {
+				"greeting" : ["fuck you", "jamie taco"]
+			}
+			
+			
+		}
+	},
+
+	"items": {
+		"elk_shit" :{"content":"ten thousand,elks all shit,one mountain,goddamn beautiful {effect0}|a sight to behold,honestly,fuck",
+					"effects" : ["face_fuck_01"]},
+		"lorem_ipsum" : {"content": "Nam et feugiat leo,Donec neque,nulla euismod,vitae,elementum et,placerat {effect0}|shit haha, i dont know, what that means {effect1}|kid i cant, fuckin see shit, right now|later,you fuckin,gavone {effect3}",
+			"effects" : ["big_head_mode","face_fuck_01","","leave_orbit"]},
+		"halloween_honey" : {"content":"Holy shit, halloween, HONEY HAM!| fine slab of ham,thick candy,corn glaze|fuck me, what a big,fuckin slice|alright lemme,have some|ahh shit|ahh fuck|i ate,too much|i'm havin, a meat dream|hang on, kid"}
+	},
+
+	"effects": {
+		"face_fuck_01" : "test"
+	},
+
+	"dialog_callbacks" : {
+		"intro_greeting" : "spawnText_Yes>_No",
+		"next_greeting" : "spawnText_Fart>_Piss>"
+	}
+	  
+}
